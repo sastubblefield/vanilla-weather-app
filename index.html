@@ -4,36 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
 
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <h1>SAN DIEGO</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/sungradient1.png" alt="sun image" width="60" />
-          70&deg
-        </div>
-
-        <div class="col-md-6">
-          <hr />
-          <ul>
-            <li>Feels Like 70 &deg</li>
-            <li>Humidity</li>
-            <li>Wind</li>
-            <li>Visibiilty</li>
-          </ul>
-          <hr />
-        </div>
-      </div>
+      <span>
+        <h1>San Diego</h1>
+        <h2>70&deg</h2>
+        <image src="images/sungradient1.png" width="175"></image>
+      </span>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>❃<br />wind<br />2mph</td>
+            <td>✽<br />precipitation<br />80%</td>
+            <td>❈<br />humidity<br />2%</td>
+          </tr>
+        </tbody>
+      </table>
       <small>
         <p class="gitlink">
           <a
@@ -41,10 +37,9 @@
             href="https://github.com/sastubblefield/vanilla-weather-app"
             >Open-source Code</a
           >, by Shannon Stubblefield
-        </p></small
-      >
+        </p>
+      </small>
     </div>
-
     <script src="src/indec.js"></script>
   </body>
 </html>
