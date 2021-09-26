@@ -16,14 +16,21 @@ h1 {
   color: rgb(198, 191, 191);
   font-size: 115px;
   font-weight: 100;
-  margin-left: 90px;
+  margin-left: 55px;
 }
-.fair {
+.degrees {
   color: rgb(164, 156, 156);
-  font-size: 25px;
+  font-size: 12px;
   font-weight: 100;
   position: fixed;
-  margin-top: 20px;
+  margin-top: 38px;
+}
+#celcius-link {
+  color: rgb(164, 156, 156);
+  font-size: 14px;
+  font-weight: 100;
+  position: fixed;
+  margin-top: 0px;
 }
 h2 {
   color: #ffd084;
@@ -63,6 +70,7 @@ img {
 }
 .gitlink {
   color: rgb(164, 156, 156);
-  text-align: center;
-  margin-top: 80px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: -55px;
 }
