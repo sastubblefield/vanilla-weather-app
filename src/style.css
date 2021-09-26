@@ -10,9 +10,10 @@ body {
 }
 h1 {
   color: rgb(198, 191, 191);
-  font-size: 95px;
-  font-weight: 60;
+  font-size: 115px;
+  font-weight: 100;
   margin-top: 20px;
+  margin-left: 50px;
 }
 .fair {
   color: rgb(164, 156, 156);
@@ -27,8 +28,8 @@ h2 {
   font-size: 16px;
   font-weight: 100;
   position: relative;
-  margin-left: 325px;
-  margin-top: -110px;
+  margin-left: 245px;
+  margin-top: -195px;
 }
 #location {
   color: #6bd5ce;
@@ -45,11 +46,7 @@ h2 {
   font-size: 16px;
 }
 img {
-  border-radius: 150px;
-  position: relative;
-  width: 160px;
-  margin-left: 140px;
-  margin-top: -170px;
+  width: 60px;
 }
 .opensource {
   color: #87d5d0;
