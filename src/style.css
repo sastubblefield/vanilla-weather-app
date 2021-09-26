@@ -4,7 +4,7 @@ body {
   margin: auto;
   margin-top: 40px;
   border: solid #97e6e1 thin;
-  padding: 60px 65px;
+  padding: 65px 50px;
   font-variant: thin;
   border-radius: 3%;
 }
@@ -48,6 +48,10 @@ h2 {
 }
 .other {
   font-size: 16px;
+}
+#description {
+  color: rgb(164, 156, 156);
+  font-variant: small-caps;
 }
 img {
   width: 60px;

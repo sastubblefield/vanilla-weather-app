@@ -20,12 +20,14 @@ function displayTemperature(response) {
   let locationElement = document.querySelector(`#location`);
   let humidityElement = document.querySelector(`#humidity`);
   let windElement = document.querySelector(`#wind`);
+  let descriptionElement = document.querySelector(`#description`);
   let dateElement = document.querySelector(`#date`);
   let iconElement = document.querySelector(`#icon`);
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   locationElement.innerHTML = response.data.name;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  descriptionElement.innerHTML = response.data.weather[0].main;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
