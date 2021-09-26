@@ -1,24 +1,58 @@
 body {
-  max-width: 500px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 325px;
   margin: auto;
   margin-top: 40px;
-  border: 1px solid;
-  padding: 20px;
-  font-variant: small-caps;
+  border: solid #97e6e1 thin;
+  padding: 60px 55px;
+  font-variant: thin;
+  border-radius: 3%;
 }
-h1,
+h1 {
+  color: rgb(198, 191, 191);
+  font-size: 95px;
+  font-weight: 60;
+  margin-top: 20px;
+}
+.fair {
+  color: rgb(164, 156, 156);
+  font-size: 25px;
+  font-weight: 100;
+  position: fixed;
+  margin-top: 20px;
+}
 h2 {
-  text-align: center;
+  color: #ffd084;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 100;
+  position: relative;
+  margin-left: 325px;
+  margin-top: -110px;
 }
-h2 {
-  margin-bottom: 30px;
+.location {
+  color: #6bd5ce;
+  font-size: 26px;
 }
-td {
-  text-align: center;
+.date {
+  color: #8fd291;
+}
+.other {
+  font-size: 16px;
+}
+img {
+  border-radius: 150px;
+  position: relative;
+  width: 160px;
+  margin-left: 140px;
+  margin-top: -170px;
+}
+.opensource {
+  color: #87d5d0;
 }
 .gitlink {
+  color: rgb(164, 156, 156);
   position: absolute;
-  margin-top: 45px;
-  margin-left: 50px;
+  margin-top: 80px;
+  margin-left: 80px;
 }

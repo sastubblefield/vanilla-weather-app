@@ -10,26 +10,27 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
 
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <span>
-        <h1>San Diego</h1>
-        <h2>70&deg</h2>
-        <image src="images/sungradient1.png" width="175"></image>
-      </span>
-      <table class="table">
-        <tbody>
-          <tr>
-            <td>❃<br />wind<br />2mph</td>
-            <td>✽<br />precipitation<br />80%</td>
-            <td>❈<br />humidity<br />2%</td>
-          </tr>
-        </tbody>
-      </table>
+      <h1>
+        <span class="tempnumber">70</span> <span class="fair">&deg F</span>
+      </h1>
+      <h2>
+        <div class="location">SAN DIEGO</div>
+        <hr />
+        <div class="date">DATE & TIME</div>
+        <div class="other">
+          humidity: 83% <br />
+          wind: 2mph
+        </div>
+      </h2>
+      <image src="images/sungradient1.png" width="175"></image>
+
       <small>
         <p class="gitlink">
           <a
