@@ -1,13 +1,7 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
   let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
   let days = [
     "Sunday",
     "Monday",
@@ -39,7 +33,17 @@ function displayTemperature(response) {
   );
 }
 
-let apiKey = "73bb802b6842545f8bc067782928d7ae";
-let city = "Sydney";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apiKey = "73bb802b6842545f8bc067782928d7ae";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityElement = document.querySelector(`#location-entered`);
+  search(cityElement.value);
+}
+
+let form = document.querySelector(`#search-location`);
+form.addEventListener("submit", handleSubmit);

@@ -4,16 +4,19 @@ body {
   margin: auto;
   margin-top: 40px;
   border: solid #97e6e1 thin;
-  padding: 60px 55px;
+  padding: 60px 65px;
   font-variant: thin;
   border-radius: 3%;
+}
+form {
+  margin-bottom: 50px;
+  margin-top: -10px;
 }
 h1 {
   color: rgb(198, 191, 191);
   font-size: 115px;
   font-weight: 100;
-  margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 90px;
 }
 .fair {
   color: rgb(164, 156, 156);
@@ -28,9 +31,10 @@ h2 {
   font-size: 16px;
   font-weight: 100;
   position: relative;
-  margin-left: 245px;
-  margin-top: -195px;
+  margin-left: 250px;
+  margin-top: -230px;
 }
+
 #location {
   color: #6bd5ce;
   font-size: 26px;
@@ -47,13 +51,14 @@ h2 {
 }
 img {
   width: 60px;
+  position: relative;
+  margin-top: 60px;
 }
 .opensource {
   color: #87d5d0;
 }
 .gitlink {
   color: rgb(164, 156, 156);
-  position: absolute;
+  text-align: center;
   margin-top: 80px;
-  margin-left: 80px;
 }

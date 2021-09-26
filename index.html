@@ -17,6 +17,14 @@
   </head>
   <body>
     <div class="container">
+      <form id="search-location">
+        <input
+          type="search"
+          placeholder="Enter Location"
+          class="form-control"
+          id="location-entered"
+        />
+      </form>
       <h1><span id="temperature">70</span><span class="fair">&deg F</span></h1>
       <h2>
         <image
@@ -24,9 +32,9 @@
           src="http://openweathermap.org/img/wn/10d@2x.png"
           width="175"
         ></image>
+
         <div id="location">SAN DIEGO</div>
 
-        <hr />
         <div id="date">DATE & TIME</div>
         <div class="other">
           humidity: <span id="humidity">83</span>%<br />
