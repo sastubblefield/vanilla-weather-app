@@ -30,11 +30,15 @@ h2 {
   margin-left: 325px;
   margin-top: -110px;
 }
-.location {
+#location {
   color: #6bd5ce;
   font-size: 26px;
 }
-.date {
+#description {
+  color: #6bd5ce;
+  font-size: 16px;
+}
+#date {
   color: #8fd291;
 }
 .other {
