@@ -19,18 +19,18 @@ h1 {
   margin-left: 55px;
 }
 .degrees {
-  color: rgb(164, 156, 156);
   font-size: 12px;
   font-weight: 100;
   position: fixed;
   margin-top: 38px;
 }
+#fahrenheit-link {
+  color: rgb(164, 156, 156);
+}
 #celcius-link {
   color: rgb(164, 156, 156);
-  font-size: 14px;
   font-weight: 100;
   position: fixed;
-  margin-top: 0px;
 }
 h2 {
   color: #ffd084;
