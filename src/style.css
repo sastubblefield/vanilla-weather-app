@@ -1,76 +1,73 @@
 body {
   max-width: 600px;
-  max-height: 325px;
-  margin: auto;
-  margin-top: 40px;
+  max-height: 345px;
   border: solid #97e6e1 thin;
   padding: 65px 50px;
-  font-variant: thin;
   border-radius: 3%;
+  margin: auto;
+  margin-top: 40px;
 }
 form {
-  margin-bottom: 50px;
-  margin-top: -10px;
+  margin-bottom: 40px;
+  margin-top: -15px;
+}
+input {
+  font-variant: small-caps;
 }
 h1 {
-  color: rgb(198, 191, 191);
   font-size: 115px;
   font-weight: 100;
-  margin-left: 55px;
+  margin-left: 60px;
 }
 .degrees {
   font-size: 12px;
   font-weight: 100;
   position: fixed;
-  margin-top: 38px;
+  margin-top: 35px;
 }
-#fahrenheit-link {
-  color: rgb(164, 156, 156);
-}
-#celcius-link {
-  color: rgb(164, 156, 156);
-  font-weight: 100;
-  position: fixed;
+h1,
+#fahrenheit-link,
+#celcius-link,
+#description,
+.gitlink {
+  color: #c6bfbf;
 }
 h2 {
-  color: #ffd084;
-  text-align: left;
   font-size: 16px;
   font-weight: 100;
+  color: #ffd084;
+  text-align: left;
   position: relative;
   margin-left: 250px;
   margin-top: -230px;
-}
-
-#location {
-  color: #6bd5ce;
-  font-size: 26px;
-}
-#description {
-  color: #6bd5ce;
-  font-size: 16px;
-}
-#date {
-  color: #8fd291;
-}
-.other {
-  font-size: 16px;
-}
-#description {
-  color: rgb(164, 156, 156);
-  font-variant: small-caps;
 }
 img {
   width: 60px;
   position: relative;
   margin-top: 60px;
 }
+#location {
+  color: #6bd5ce;
+  font-size: 28px;
+}
+
+#date {
+  color: #8fd291;
+  font-variant: small-caps;
+}
+.other {
+  font-size: 16px;
+  font-variant: small-caps;
+}
+#description {
+  font-variant: small-caps;
+}
 .opensource {
   color: #87d5d0;
 }
 .gitlink {
-  color: rgb(164, 156, 156);
   text-align: left;
-  margin-top: 50px;
+  font-variant: small-caps;
+  margin-top: 80px;
   margin-left: -55px;
 }

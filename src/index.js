@@ -55,7 +55,7 @@ function showcelciusDegrees(event) {
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
-function showcfahrenheitDegrees(event) {
+function showfahrenheitDegrees(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector(`#temperature`);
   temperatureElement = Math.round(fahreneheitTemperature);
