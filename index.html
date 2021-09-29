@@ -28,14 +28,14 @@
       <h1>
         <span id="temperature">70</span>
         <span class="degrees"
-          ><a id="fahrenheit-link" href="">&degF</a> |
+          ><a id="fahrenheit-link" class="active" href="">&degF</a> |
           <a id="celcius-link" href=""> &degC</a></span
         >
       </h1>
       <h2>
         <image
           id="icon"
-          src="http://openweathermap.org/img/wn/01n.png"
+          src="http://openweathermap.org/img/wn/02d.png"
           width="175"
         ></image>
 
@@ -46,9 +46,21 @@
           humidity: <span id="humidity">83</span>%<br />
           wind: <span id="wind">2</span>mph<br />
         </div>
-        <div id="description">clear</div>
+        <div id="description">clouds</div>
       </h2>
-
+      <div class="weather-forecast" id="forecast">
+        <div class="row">
+          <div class="col-2">
+            <div class="weather-forecast-day">MON</div>
+            <image
+              src="http://openweathermap.org/img/wn/50d.png"
+              width="36"
+            ></image>
+            <span class="weather-forecast-day-max">70</span>
+            <span class="weather-forecast-day-min">68</span>
+          </div>
+        </div>
+      </div>
       <small>
         <p class="gitlink">
           <a

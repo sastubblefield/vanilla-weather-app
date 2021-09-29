@@ -51,14 +51,18 @@ function handleSubmit(event) {
 function showcelciusDegrees(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector(`#temperature`);
+  fahrenheitLink.classList.remove("active");
+  celciusLink.classList.add("active");
   let celciusTemperature = ((fahreneheitTemperature - 32) * 5) / 9;
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
 function showfahrenheitDegrees(event) {
   event.preventDefault();
+  celciusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector(`#temperature`);
-  temperatureElement = Math.round(fahreneheitTemperature);
+  temperatureElement.innerHTML = Math.round(fahreneheitTemperature);
 }
 
 let fahreneheitTemperature = null;

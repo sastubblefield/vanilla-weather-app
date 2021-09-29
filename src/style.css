@@ -1,6 +1,6 @@
 body {
   max-width: 600px;
-  max-height: 345px;
+  max-height: 400px;
   border: solid #97e6e1 thin;
   padding: 65px 50px;
   border-radius: 3%;
@@ -15,23 +15,36 @@ input {
   font-variant: small-caps;
 }
 h1 {
+  color: #acaaaa;
   font-size: 115px;
   font-weight: 100;
   margin-left: 60px;
 }
 .degrees {
+  color: #c6bfbf;
+
   font-size: 12px;
   font-weight: 100;
   position: fixed;
   margin-top: 35px;
 }
-h1,
-#fahrenheit-link,
-#celcius-link,
-#description,
-.gitlink {
+
+#fahrenheit-link {
   color: #c6bfbf;
 }
+#fahrenheit-link,
+.active {
+  color: #495057;
+  cursor: default;
+}
+#fahrenheit-link,
+.active:hover {
+  text-decoration: none;
+}
+#celcius-link {
+  color: #c6bfbf;
+}
+
 h2 {
   font-size: 16px;
   font-weight: 100;
@@ -41,7 +54,7 @@ h2 {
   margin-left: 250px;
   margin-top: -230px;
 }
-img {
+#icon {
   width: 60px;
   position: relative;
   margin-top: 60px;
@@ -61,13 +74,23 @@ img {
 }
 #description {
   font-variant: small-caps;
+  color: #c6bfbf;
+}
+.weather-forecast {
+  color: #c6bfbf;
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-forecast-day-max {
+  color: #acaaaa;
 }
 .opensource {
   color: #87d5d0;
 }
 .gitlink {
+  color: #c6bfbf;
   text-align: left;
   font-variant: small-caps;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-left: -55px;
 }
