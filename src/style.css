@@ -1,6 +1,6 @@
 body {
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 575px;
+  max-height: 430px;
   border: solid #97e6e1 thin;
   padding: 65px 50px;
   border-radius: 3%;
@@ -79,7 +79,7 @@ h2 {
 .weather-forecast {
   color: #c6bfbf;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .weather-forecast-day-max {
   color: #acaaaa;

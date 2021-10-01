@@ -15,10 +15,11 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector(`#forecast`);
-  let forecastHTML = `<div class="row">`;
   let days = ["MON", "TUE", "WED", "THU"];
+  let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -37,6 +38,11 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+function getForecast(coordinates) {
+  let apiKey = "73bb802b6842545f8bc067782928d7ae";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector(`#temperature`);
@@ -46,7 +52,9 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector(`#description`);
   let dateElement = document.querySelector(`#date`);
   let iconElement = document.querySelector(`#icon`);
+
   fahreneheitTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = Math.round(fahreneheitTemperature);
   locationElement.innerHTML = response.data.name;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -57,6 +65,7 @@ function displayTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
   );
+  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -99,4 +108,4 @@ celciusLink.addEventListener("click", showcelciusDegrees);
 let fahrenheitLink = document.querySelector(`#fahrenheit-link`);
 fahrenheitLink.addEventListener("click", showfahrenheitDegrees);
 
-displayForecast();
+search("San Diego");
