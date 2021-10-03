@@ -11,7 +11,7 @@ body {
 
 form {
   margin-bottom: 60px;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 input {
   font-variant: small-caps;
@@ -78,14 +78,17 @@ h2 {
 hr {
   margin-top: 20px;
 }
-.weather-forecast {
-  color: #b3abab;
-  margin-top: 25px;
-  margin-left: 10px;
-  font-size: 16px;
+.weather-forecast-day {
+  text-align: center;
 }
 .weather-forecast-day-min {
   opacity: 60%;
+  font-size: 14px;
+}
+.weather-forecast {
+  color: #b3abab;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .opensource {
@@ -95,6 +98,6 @@ hr {
   color: #c6bfbf;
   text-align: left;
   font-variant: small-caps;
-  margin-top: 40px;
+  margin-top: 55px;
   margin-left: -55px;
 }
