@@ -1,12 +1,14 @@
 body {
   max-width: 700px;
-  max-height: 475px;
-  border: solid #97e6e1 thin;
+  max-height: 485px;
+  border: #97e6e1 solid thin;
   padding: 65px 50px;
   border-radius: 3%;
   margin: auto;
   margin-top: 40px;
+  border-inline-color: rgb(247, 230, 215);
 }
+
 form {
   margin-bottom: 60px;
   margin-top: -15px;
@@ -18,7 +20,7 @@ h1 {
   color: #acaaaa;
   font-size: 115px;
   font-weight: 80;
-  margin-left: 285px;
+  margin-left: 262px;
 }
 .degrees {
   color: #c6bfbf;
@@ -41,15 +43,15 @@ h1 {
   text-decoration: none;
 }
 #celcius-link {
-  color: #c6bfbf;
+  color: #b3abab;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
-  color: #ffd084;
+  color: #ffcf90;
   text-align: right;
-  margin-right: 300px;
+  margin-right: 315px;
   margin-top: -245px;
 }
 #icon {
@@ -71,15 +73,19 @@ h2 {
 }
 #description {
   font-variant: small-caps;
-  color: #c6bfbf;
+  color: #b3abab;
+}
+hr {
+  margin-top: 20px;
 }
 .weather-forecast {
-  color: #c6bfbf;
-  margin-top: 50px;
+  color: #b3abab;
+  margin-top: 25px;
   margin-left: 10px;
+  font-size: 16px;
 }
-.weather-forecast-day-max {
-  color: #acaaaa;
+.weather-forecast-day-min {
+  opacity: 60%;
 }
 
 .opensource {
