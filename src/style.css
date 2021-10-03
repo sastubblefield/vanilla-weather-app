@@ -1,6 +1,6 @@
 body {
   max-width: 700px;
-  max-height: 500px;
+  max-height: 475px;
   border: solid #97e6e1 thin;
   padding: 65px 50px;
   border-radius: 3%;
@@ -8,7 +8,7 @@ body {
   margin-top: 40px;
 }
 form {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-top: -15px;
 }
 input {
@@ -17,15 +17,15 @@ input {
 h1 {
   color: #acaaaa;
   font-size: 115px;
-  font-weight: 100;
-  margin-left: 60px;
+  font-weight: 80;
+  margin-left: 285px;
 }
 .degrees {
   color: #c6bfbf;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 100;
   position: fixed;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 #fahrenheit-link {
@@ -48,14 +48,12 @@ h2 {
   font-size: 16px;
   font-weight: 100;
   color: #ffd084;
-  text-align: left;
-  position: relative;
-  margin-left: 250px;
-  margin-top: -230px;
+  text-align: right;
+  margin-right: 300px;
+  margin-top: -245px;
 }
 #icon {
   width: 60px;
-  position: relative;
   margin-top: 60px;
 }
 #location {
@@ -77,15 +75,13 @@ h2 {
 }
 .weather-forecast {
   color: #c6bfbf;
-  margin-top: 40px;
-  margin-left: 12px;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 .weather-forecast-day-max {
   color: #acaaaa;
 }
-.weather-wrap {
-  margin: auto 12px;
-}
+
 .opensource {
   color: #87d5d0;
 }
@@ -93,6 +89,6 @@ h2 {
   color: #c6bfbf;
   text-align: left;
   font-variant: small-caps;
-  margin-top: 75px;
+  margin-top: 40px;
   margin-left: -55px;
 }

@@ -31,22 +31,22 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `<div class="row">
-        <div class="col-sm-2">
+        <div><div class="col-2">
             <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div>
             <img
               src="http://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
               }@2x.png"
-              width="36"
+              width="38"
             />
-            <span class="weather-forecast-day-max">${Math.round(
-              forecastDay.temp.max
-            )}&deg</span>
+           <span class="weather-forecast-day-max">${Math.round(
+             forecastDay.temp.max
+           )}&deg</span>
             <span class="weather-forecast-day-min">${Math.round(
               forecastDay.temp.min
-            )}&deg</span>
+            )}&deg</span></div>
           </div>
-        </div>`;
+        <div>`;
     }
   });
   forecastHTML = forecastHTML + `</div>`;
