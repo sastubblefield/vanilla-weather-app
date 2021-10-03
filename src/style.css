@@ -1,6 +1,6 @@
 body {
-  max-width: 575px;
-  max-height: 430px;
+  max-width: 700px;
+  max-height: 500px;
   border: solid #97e6e1 thin;
   padding: 65px 50px;
   border-radius: 3%;
@@ -22,7 +22,6 @@ h1 {
 }
 .degrees {
   color: #c6bfbf;
-
   font-size: 12px;
   font-weight: 100;
   position: fixed;
@@ -78,11 +77,14 @@ h2 {
 }
 .weather-forecast {
   color: #c6bfbf;
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-left: 12px;
 }
 .weather-forecast-day-max {
   color: #acaaaa;
+}
+.weather-wrap {
+  margin: auto 12px;
 }
 .opensource {
   color: #87d5d0;
@@ -91,6 +93,6 @@ h2 {
   color: #c6bfbf;
   text-align: left;
   font-variant: small-caps;
-  margin-top: 30px;
+  margin-top: 75px;
   margin-left: -55px;
 }
