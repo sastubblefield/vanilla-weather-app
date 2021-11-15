@@ -15,6 +15,7 @@ form {
 }
 input {
   font-variant: small-caps;
+  text-align: center;
 }
 h1 {
   color: #acaaaa;
@@ -88,8 +89,6 @@ hr {
 }
 .weather-forecast {
   color: #b3abab;
-  margin-top: 20px;
-  margin-left: 10px;
 }
 
 .opensource {
@@ -101,4 +100,37 @@ hr {
   font-variant: small-caps;
   margin-top: 55px;
   margin-left: -55px;
+}
+@media (max-width: 850px) {
+  .weather-forecast {
+    display: none;
+  }
+
+  .gitlink {
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  body {
+    max-width: 500px;
+    max-height: 355px;
+    border: none;
+  }
+
+  h1 {
+    margin-left: 190px;
+  }
+  h2 {
+    margin-right: 200px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    margin-left: 80px;
+  }
+  h2 {
+    margin-top: -30px;
+    margin-right: 40px;
+    text-align: center;
+  }
 }
