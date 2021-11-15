@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html lang="en"><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Inconsolata:wght@200&family=Julius+Sans+One&family=Mate+SC&display=swap" rel="stylesheet">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Inconsolata:wght@200&family=Julius+Sans+One&family=Mate+SC&display=swap"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/style.css" />
 
-    <title>Weather App</title>
-  </head>
-  <body>
-    <div class="container">
-      <form id="search-location">
-        <input
-          type="search"
-          placeholder="Enter Location"
-          class="form-control form-control-lg"
-          id="location-entered"
-        />
-      </form>
-      <h1>
-        <span id="temperature">70</span>
-        <span class="degrees"
-          ><a id="fahrenheit-link" class="active" href="">&degF</a> |
-          <a id="celcius-link" href=""> &degC</a></span
-        >
-      </h1>
-      <h2>
-        <image
-          id="icon"
-          src="http://openweathermap.org/img/wn/02d.png"
-          width="175"
-        ></image>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <link rel="stylesheet" href="src/style.css" />
 
-        <div id="location">SAN DIEGO</div>
+      <title>Weather App</title>
+    </head>
+    <body>
+      <div class="container">
+        <form id="search-location">
+          <input
+            type="search"
+            placeholder="Enter Location"
+            class="form-control form-control-lg font-weight-lighter"
+            id="location-entered"
+          />
+        </form>
+        <h1>
+          <span id="temperature">70</span>
+          <span class="degrees"
+            ><a id="fahrenheit-link" class="active" href="">&degF</a> |
+            <a id="celcius-link" href=""> &degC</a></span
+          >
+        </h1>
+        <h2>
+          <image
+            id="icon"
+            src="http://openweathermap.org/img/wn/02d.png"
+            width="175"
+          ></image>
 
-        <div id="date">Friday 5:00</div>
-        <div class="other">
-          humidity: <span id="humidity">83</span>%<br />
-          wind: <span id="wind">2</span>mph<br />
-        </div>
-        <div id="description">clouds</div>
-      </h2>
-      <hr />
-      <div class="weather-forecast" id="forecast"></div>
-      <small>
-        <p class="gitlink">
-          <a
-            class="opensource"
-            href="https://github.com/sastubblefield/vanilla-weather-app"
-            >Open-source Code</a
-          >, by Shannon Stubblefield
-        </p>
-      </small>
-    </div>
+          <div id="location">SAN DIEGO</div>
 
-    <script src="src/index.js"></script>
-  </body>
+          <div id="date">Friday 5:00</div>
+          <div class="other">
+            humidity: <span id="humidity">83</span>%<br />
+            wind: <span id="wind">2</span>mph<br />
+          </div>
+          <div id="description">clouds</div>
+        </h2>
+        <hr />
+        <div class="weather-forecast " id="forecast"></div>
+        <small>
+          <p class="gitlink">
+            <a
+              class="opensource"
+              href="https://github.com/sastubblefield/vanilla-weather-app"
+              >Open-source Code</a
+            >, by Shannon Stubblefield
+          </p>
+        </small>
+      </div>
+
+      <script src="src/index.js"></script>
+    </body>
+  </html>
 </html>
